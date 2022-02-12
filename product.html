@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GLaDOS | Product listing page</title>
+    <link rel="stylesheet" href="https://sapota-ui.netlify.app/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+  </head>
+  <body>
+    <!-- top most nav -->
+    <header class="top-nav">
+      <nav class="brand-nav navigation box-shadow">
+        <div class="nav-col nv-col-1">
+          <div class="nav-brand">GLaDOS</div>
+
+          <ul class="list-non-bullets align-right">
+            <li class="list-item-inline">
+              <a class="link" href=""><i class="fas fa-heart"></i></a>
+            </li>
+            <li class="list-item-inline">
+              <a class="link" href=""
+                ><i class="fas fa-shopping-cart">Cart</i></a
+              >
+            </li>
+            <li class="list-item-inline">
+              <a class="btn btn-primary-outline" href="">Login</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-col nv-col-2">
+          <input
+            type="search"
+            class="input input-search input-primary"
+            id="gsearch"
+            name="gsearch"
+          />
+          <button class="btn btn-primary" type="submit">
+            <i class="fas fa-search" title="search"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- product category bar -->
+      <nav class="pdt-category-bar box-shadow navigation">
+        <ul class="align-center list-structure">
+          <li class="list-item-inline">
+            <a class="link" href="">Playstation</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="">Xbox</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="">Nintendo</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="">Mobile Games</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="">Deals</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <!-- aside filter bar -->
+      <aside class="filter-container box-shadow auto-container">
+        <div class="filter-title flex-row">
+          <h3>FILTERS</h3>
+          <a href="" class="link">Clear</a>
+        </div>
+        <div class="filter-price-container">
+          <h3>Price</h3>
+          <div class="filter-price-range flex-row">
+            <span>500</span>
+            <span>2500</span>
+            <span>5000</span>
+          </div>
+          <input
+            type="range"
+            name=""
+            id="price-range-input"
+            min="500"
+            max="5000"
+            value="50"
+            class="filter-price-input"
+          />
+        </div>
+        <div class="filter-category-container flex-column">
+          <h3>Category by Brand</h3>
+          <label class="p-lg" for="filter-brand-sony"
+            ><input
+              type="checkbox"
+              name=""
+              id="filter-brand-sony"
+              class="filter-category-checkbox"
+            />Sony</label
+          >
+          <label class="p-lg" for="filter-brand-EA"
+            ><input
+              type="checkbox"
+              name=""
+              id="filter-brand-EA"
+              class="filter-category-checkbox"
+            />EA</label
+          >
+          <label class="p-lg" for="filter-brand-Microsoft"
+            ><input
+              type="checkbox"
+              name=""
+              id="filter-brand-Microsoft"
+              class="filter-category-checkbox"
+            />Microsoft</label
+          >
+          <label class="p-lg" for="filter-brand-Tencent"
+            ><input
+              type="checkbox"
+              name=""
+              id="filter-brand-Tencent"
+              class="filter-category-checkbox"
+            />Tencent</label
+          >
+          <label class="p-lg" for="filter-brand-Nintendo"
+            ><input
+              type="checkbox"
+              name=""
+              id="filter-brand-Nintendo"
+              class="filter-category-checkbox"
+            />Nintendo</label
+          >
+        </div>
+        <div class="filter-category-container flex-column">
+          <h3>Category by Genre</h3>
+          <label class="p-lg" for="filter-genre-Sandbox"
+            ><input
+              type="checkbox"
+              name=""
+              id="filter-genre-Sandbox"
+              class="filter-category-checkbox"
+            />Sandbox</label
+          >
+          <label class="p-lg" for="filter-genre-RTS"
+            ><input
+              type="checkbox"
+              name=""
+              id="filter-genre-RTS"
+              class="filter-category-checkbox"
+            />Real-time strategy</label
+          >
+          <label class="p-lg" for="filter-genre-RPG"
+            ><input
+              type="checkbox"
+              name=""
+              id="filter-genre-RPG"
+              class="filter-category-checkbox"
+            />Role-playing</label
+          >
+          <label class="p-lg" for="filter-genre-Shooter"
+            ><input
+              type="checkbox"
+              name=""
+              id="filter-genre-Shooter"
+              class="filter-category-checkbox"
+            />Shooter</label
+          >
+          <label class="p-lg" for="filter-genre-Sports"
+            ><input
+              type="checkbox"
+              name=""
+              id="filter-genre-Sports"
+              class="filter-category-checkbox"
+            />Sports</label
+          >
+        </div>
+        <div class="filter-rating-container flex-column">
+          <h3>Rating</h3>
+          <label class="p-lg" for="rating-4star"
+            ><input type="radio" name="rating" id="rating-4star" />4 Stars and
+            above</label
+          >
+          <label class="p-lg" for="rating-3star"
+            ><input type="radio" name="rating" id="rating-3star" />3 Stars and
+            above</label
+          >
+          <label class="p-lg" for="rating-2star"
+            ><input type="radio" name="rating" id="rating-2star" />2 Stars and
+            above</label
+          >
+          <label class="p-lg" for="rating-1star"
+            ><input type="radio" name="rating" id="rating-1star" />1 Stars and
+            above</label
+          >
+        </div>
+        <div class="filter-sort-by flex-column">
+          <h3>Sort by</h3>
+          <label class="p-lg" for="price-low-to-high"
+            ><input type="radio" name="sort-by" id="price-low-to-high" />Price -
+            Low to High</label
+          >
+          <label class="p-lg" for="price-high-to-low"
+            ><input type="radio" name="sort-by" id="price-high-to-low" />Price -
+            High to Low</label
+          >
+        </div>
+      </aside>
+      <main>
+        <!-- category list cards -->
+        <section class="card-categories auto-container">
+          <ul class="list-structure">
+            <li class="list-non-bullet">
+              <div class="card-container">
+                <img
+                  class="card-img-top"
+                  src="https://cdn.game.net/image/upload/w_750,f_auto,q_auto/v1/game_img/merch2021/Games/StrangersOfParadise/StrangersOfParadise-E.jpg"
+                  alt="card-img"
+                />
+                <span class="badge-card">Special offer</span>
+                <div class="card-info">
+                  <h3 class="card-title">Stranger of Paradise</h3>
+                </div>
+                <div class="card-action">
+                  <span class="card-cost">1299₹</span>
+                  <button class="btn btn-primary btn-lg">
+                    <i class="fas fa-shopping-cart"> Add to Cart</i>
+                  </button>
+                  <button class="wishlist-icon">
+                    <i class="fa fa-2x fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="list-non-bullet">
+              <div class="card-container">
+                <img
+                  class="card-img-top"
+                  src="https://cdn.game.net/image/upload/w_750,f_auto,q_auto/v1/game_img/merch2021/Games/StrangersOfParadise/StrangersOfParadise-E.jpg"
+                  alt="card-img"
+                />
+                <div class="card-info">
+                  <h3 class="card-title">Stranger of Paradise</h3>
+                </div>
+                <div class="card-action">
+                  <span class="card-cost">1299₹</span>
+                  <button class="btn btn-primary btn-lg">
+                    <i class="fas fa-shopping-cart"> Add to Cart</i>
+                  </button>
+                  <button class="wishlist-icon">
+                    <i class="fa fa-2x fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="list-non-bullet">
+              <div class="card-container">
+                <img
+                  class="card-img-top"
+                  src="https://cdn.game.net/image/upload/w_750,f_auto,q_auto/v1/game_img/merch2021/Games/StrangersOfParadise/StrangersOfParadise-E.jpg"
+                  alt="card-img"
+                />
+                <div class="card-info">
+                  <h3 class="card-title">Stranger of Paradise</h3>
+                </div>
+                <div class="card-action">
+                  <span class="card-cost">1299₹</span>
+                  <button class="btn btn-primary btn-lg">
+                    <i class="fas fa-shopping-cart"> Add to Cart</i>
+                  </button>
+                  <button class="wishlist-icon">
+                    <i class="fa fa-2x fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="list-non-bullet">
+              <div class="card-container">
+                <img
+                  class="card-img-top"
+                  src="https://cdn.game.net/image/upload/w_750,f_auto,q_auto/v1/game_img/merch2021/Games/StrangersOfParadise/StrangersOfParadise-E.jpg"
+                  alt="card-img"
+                />
+                <div class="card-info">
+                  <h3 class="card-title">Stranger of Paradise</h3>
+                </div>
+                <div class="card-action">
+                  <span class="card-cost">1299₹</span>
+                  <button class="btn btn-primary btn-lg">
+                    <i class="fas fa-shopping-cart"> Add to Cart</i>
+                  </button>
+                  <button class="wishlist-icon">
+                    <i class="fa fa-2x fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="list-non-bullet">
+              <div class="card-container">
+                <img
+                  class="card-img-top"
+                  src="https://cdn.game.net/image/upload/w_750,f_auto,q_auto/v1/game_img/merch2021/Games/StrangersOfParadise/StrangersOfParadise-E.jpg"
+                  alt="card-img"
+                />
+                <div class="card-info">
+                  <h3 class="card-title">Stranger of Paradise</h3>
+                </div>
+                <div class="card-action">
+                  <span class="card-cost">1299₹</span>
+                  <button class="btn btn-primary btn-lg">
+                    <i class="fas fa-shopping-cart"> Add to Cart</i>
+                  </button>
+                  <button class="wishlist-icon">
+                    <i class="fa fa-2x fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="list-non-bullet">
+              <div class="card-container">
+                <img
+                  class="card-img-top"
+                  src="https://cdn.game.net/image/upload/w_750,f_auto,q_auto/v1/game_img/merch2021/Games/StrangersOfParadise/StrangersOfParadise-E.jpg"
+                  alt="card-img"
+                />
+                <div class="card-info">
+                  <h3 class="card-title">Stranger of Paradise</h3>
+                </div>
+                <div class="card-action">
+                  <span class="card-cost">1299₹</span>
+                  <button class="btn btn-primary btn-lg">
+                    <i class="fas fa-shopping-cart"> Add to Cart</i>
+                  </button>
+                  <button class="wishlist-icon">
+                    <i class="fa fa-2x fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer-header">Connect with me here</div>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://www.linkedin.com/in/abhij1607/"
+            ><i class="fa fa-3x fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/abhij1607"
+            ><i class="fa fa-3x fa-github"></i
+          ></a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://twitter.com/abhijain1607"
+            ><i class="fa fa-3x fa-twitter-square"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
