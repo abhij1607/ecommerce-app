@@ -15,8 +15,8 @@
 .brand-nav.navigation .nv-col-2 {
   left: 30%;
 }
-#gsearch {
-  width: 50rem;
+.brand-nav.navigation .input-search {
+  width: var(--size-480);
 }
 .btn-primary-outline {
   background-color: var(--white);
