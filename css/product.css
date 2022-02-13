@@ -15,7 +15,7 @@
   max-width: 120rem;
 }
 .card-container {
-  width: 32rem;
+  width: var(--size-320);
   border: var(--size-16);
 }
 .card-action {
