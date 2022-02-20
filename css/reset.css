@@ -9,6 +9,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
+  font-size: 1.6rem;
 }
 button {
   background-color: unset;
@@ -19,7 +20,12 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
 h1,
 .h1 {
   font-size: var(--size-32);

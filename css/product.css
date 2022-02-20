@@ -1,6 +1,6 @@
 /*filter aside*/
 .filter-container {
-  flex-basis: var(--size-480);
+  flex-basis: var(--size-320);
 }
 .filter-title,
 .filter-price-range {
