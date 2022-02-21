@@ -12,7 +12,7 @@ One Stop for all device users
 ## Pages
 Check out the live pages here:
 - [Home page](https://glados-ecommerce.netlify.app/)
-- [Products page](https://glados-ecommerce.netlify.app/products.html)
+- [Products page](https://glados-ecommerce.netlify.app/product.html)
 - [Cart Management page](https://glados-ecommerce.netlify.app/cart.html)
 - [Wishlist Management page](https://glados-ecommerce.netlify.app/wishlist.html)
 - [Signup page](https://glados-ecommerce.netlify.app/signup.html)
