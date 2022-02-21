@@ -12,11 +12,8 @@
 .brand-nav.navigation .link {
   color: var(--txt-clr-secondary);
 }
-.brand-nav.navigation .nv-col-2 {
-  left: 30%;
-}
 .brand-nav.navigation .input-search {
-  width: var(--size-480);
+  width: 100%;
 }
 .btn-primary-outline {
   background-color: var(--white);
