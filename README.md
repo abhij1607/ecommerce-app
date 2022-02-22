@@ -21,6 +21,6 @@ Check out the live pages here:
 - [Signup page](https://glados-ecommerce.netlify.app/signup.html)
 - [Login page](https://glados-ecommerce.netlify.app/login.html)
 
-## Documentation Overview
+## Website screen Overview
 
 ![demo gif](assets/animation-glados.gif)
